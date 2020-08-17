@@ -16,7 +16,9 @@
 <body>
        <nav class="navbar navbar-expand-md border sticky-top navbar-light">
 		    <!-- nav brand -->
-		   
+		   	<button class="navbar-button show" type="button" >
+		          <span class="navbar-toggler-icon"></span>
+		    </button>
 		    <a class="navbar-brand ml-2"  href="">
 		   	<p>Find Your Maps</p>
 		    </a>
@@ -39,11 +41,73 @@
     </nav>
     <!-- navgation end -->
     <div class="empty"></div>
+    <!-- side nav -->
+    <div class="container nav__side__container" >
+    	<div class="nav__side">
+				  <ul class="nav__item">
+				  	
+		             <li class="nav__list">
+		                <a href="#" class="side__nav-link">
+		             	<span class="icon">icon</span> 
+		             	<span class="text"> A</span>
+		              </a>
+		             </li>
+		              <li class="nav__list">
+		               <a href="#"  class="side__nav-link">
+		              	<span class="icon">icon</span> 
+		             	<span class="text">B</span></a>
+		               </a> 
+		             </li>
+		             <li class="line"></li>
+		              <li class="nav__list"> 
+		              	<a href="#"  class="side__nav-link">
+		              		<span class="icon">icon</span> 
+		             		<span class="text">Hotels</span></a>
+		                </a> 
+		             </li>
+		              <li class="nav__list">
+		             	<a href="#"  class="side__nav-link">
+		              		<span class="icon">icon</span> 
+		             		<span class="text">Train</span></a>
+		                </a> 
+		             </li>
+		              <li class="nav__list">
+		              	<a href="#"  class="side__nav-link">
+		              		<span class="icon">icon</span> 
+		             		<span class="text">Bus</span></a>
+		                </a> 
+		             </li>
+		             <li class="nav__list">
+		             	<a href="#"  class="side__nav-link">
+		              		<span class="icon">icon</span> 
+		             		<span class="text">Cabs</span></a>
+		                </a>            	
+		             </li>
+		   
+		             <li class="line"></li>
+		   
+		             <li class="nav__list">
+		             	<a href="#"  class="side__nav-link">
+		              		<span class="icon">icon</span> 
+		             		<span class="text">C</span></a>
+		               </a> 
+		             </li>
+
+		             <li class="nav__list">
+		             	<a href="#"  class="side__nav-link">
+		              		<span class="icon">icon</span> 
+		             		<span class="text">D</span></a>
+		               </a> 
+		             </li>
+		          </ul>
+		</div>
+	</div>
+		<!-- side nav end -->
     <!--Break-->
+<div class="full__container">
+
     <div class="container-fluid">
         <h1 class="pad">My First Bootstrap Page</h1>
-        
-                  
     </div>
     <!--Front Page-->
     <div class="row">  
@@ -455,7 +519,6 @@
                                     <div class="card-body">
                                         <h4 class="card-title">Special title treatment</h4>
                                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
                                     </div>
                                 </div>
                             </div>
@@ -556,9 +619,9 @@
           </div>
         </div>
   </footer>
+</div>
 </body>
 <script type="text/javascript">
-	navItemToggle()
  function navItemToggle()
  {
  	let search_bar=document.querySelector(".searchbar--hide");
@@ -577,8 +640,6 @@
  				nav_bar.style.backgroundColor="rgb(0,0,0,0)";
  				nav_list.style.backgroundColor="rgb(0,0,0,0)";
  				nav_button.style.backgroundColor="rgb(0,0,0,0)";
-
-
  			}
  			else
  			{
@@ -592,6 +653,63 @@
  		},option);
  	observer.observe(header)
 
+	 }
+function sideNavItemToggle()
+{
+
+ 	var nav_list=document.querySelectorAll(".nav__list");
+ 	var nav_link=document.querySelectorAll(".side__nav-link");
+ 	console.log(nav_link)
+
+ 	var nav__side__container=document.querySelector(".nav__side__container");
+ 	
+ 	let nav_button=document.querySelector(".navbar-button");
+ 	nav_button.addEventListener("click",()=>showText(1));
+
+ 	var texts=document.querySelectorAll(".text");
+ 	
+ 	for(let i=0;i<nav_list.length;i++)
+ 	{
+ 		//nav_list[i].addEventListener("mouseover",showText);
+ 		nav_link[i].addEventListener("mouseover",showText);
+ 		//nav_list[i].addEventListener("mouseout",hideText);
+ 		nav_link[i].addEventListener("mouseout",hideText);
+
+ 	}
+ 	function showText(isbutton)
+ 	{
+ 		
+ 		if(isbutton && nav_button.classList[1]!=="show")
+ 		{
+ 				hideText();
+ 				return;	
+ 		}
+ 		nav__side__container.style.width="150px";
+ 		for(let i=0;i<nav_list.length;i++)
+ 		{
+ 			texts[i].style.display="inline";
+ 		}
+ 		nav_button.classList.remove("show");
+ 		
+ 	}
+ 	function hideText()
+ 	{
+ 		nav__side__container.style.width="80px";
+ 		for(let i=0;i<nav_list.length;i++)
+ 		{
+ 			texts[i].style.display="none";
+ 		}
+ 		nav_button.classList.add("show");
+ 	}
+
  }
+function main()
+{
+	navItemToggle()
+	sideNavItemToggle();
+
+}
+main();
+
 </script>
 </html> 
