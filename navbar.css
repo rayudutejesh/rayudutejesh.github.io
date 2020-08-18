@@ -80,7 +80,7 @@ nav
 }
 .nav-item:hover
 {
-	background-color:#007bff;
+	background-color: #80808047;
 }
 .dropdown
 {
@@ -98,10 +98,10 @@ nav
 .options
 {
   position: absolute;
-  left:-10px;
+  left:-8px;
   top: 35px;
   background-color: white;
-  width: auto;
+  width: 130px;
   padding-left: 1rem;
   list-style:none; 
   display: none; 
@@ -114,7 +114,7 @@ nav
 }
 .options li:hover
 {
-  background-color:#007bff;
+  background-color: #80808047;
 }
 .searchbar--hide
 {
@@ -169,23 +169,28 @@ nav
   font-size: 1.2rem;
   height: 3rem;
 }
+.side__nav-link
+{
+	color: blue;
+}
 .side__nav-link:hover
 {
   width: 100%;
   display: block;
   background-color: #80808047;
   text-decoration: none;
+  border-radius: 10px;
+  color: black;
 }
 .full__container
 {
 	margin-left:80px;  
 }
-
 .container-fluids
 {
     width: 100%;
   	padding:0 10px;
-	 position: relative; 
+	position: relative; 
 }
 /* #Slider 1 and slider2 style
 ================================================== */
@@ -193,7 +198,6 @@ nav
 {
     width: 90%;
     margin:0 auto;
-
     padding: 0 0;
     overflow: hidden;
     position: relative;
@@ -290,7 +294,7 @@ nav
 	top: 50%;
 	left: 0;
 	width: 100%;
-  margin-top: 40px;
+  	margin-top: 40px;
 	transform: translateY(-50%);
 	z-index: 20;
 }
@@ -605,4 +609,98 @@ body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 body.dark .logo img {
   filter: brightness(100%);
+}
+
+
+/* media query for tablet phones */
+@media (max-width:992px)
+{
+.card
+{
+  position: absolute;
+  width: 45%;
+}
+}
+/* media query for laptop and computer phones */
+@media (min-width: 993px)
+{
+
+.card
+{
+   position: absolute;
+   width: 31%;
+}	
+.button
+{
+  top: 30%;
+}
+}
+/* media query for mobile phones */
+@media (max-width:768px)
+{
+.navbar-nav
+{
+  width: 35%;
+}
+.navbar-brand
+{
+  font-size: 1rem;
+}
+.navbar-nav
+{
+  font-size: .7rem;
+}
+.card
+{
+  position: absolute;
+  width: 45%;
+} 
+.button
+{
+  top: 25%;
+}
+.button__prev1,
+.button__prev2
+{
+  left: 4%;
+}
+.button__next1,
+.button__next2
+{
+  right: 13%;
+}
+}
+@media (max-width:500px)
+{
+.navbar-nav
+{
+  width: 40%;
+}
+.navbar-brand
+{
+  font-size: 1rem;
+}
+.navbar-nav
+{
+  font-size: .7rem;
+}
+.card
+{
+  position: absolute;
+  width: 100%;
+} 
+.button
+{
+  top: 40%;
+}
+.button__prev1,
+.button__prev2
+{
+  left: -3%;
+}
+.button__next1,
+.button__next2
+{
+ left:86.4%;
+}
 }

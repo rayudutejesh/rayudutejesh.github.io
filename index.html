@@ -31,10 +31,10 @@
 		              <li class="nav-item nav-link dropdown">
 		              	Login <span>&#9660</span>
 		              	<ul class="options">
-		              		<li>Google</li>
-		              		<li> Gmail</li>
-		              		<li>Facebook</li>
-		              		<li>Twitter</li>
+		              		<li class="nav-item nav-link">Google</li>
+		              		<li class="nav-item nav-link"> Gmail</li>
+		              		<li class="nav-item nav-link">Facebook</li>
+		              		<li class="nav-item nav-link">Twitter</li>
 		              	</ul>
 		              </li>
 		        </ul>
@@ -350,6 +350,7 @@
  	let nav_bar=document.querySelector(".navbar");
  	let nav_list=document.querySelector(".navbar-nav");
  	let nav_button=document.querySelector(".navbar-button");
+ 	let options=document.querySelector(".options");
  	let header=document.querySelector(".empty");
  	let option={root:null,thershold:0,rootmargin:""}
  	let observer=new IntersectionObserver(function(entries,observer)
@@ -361,6 +362,8 @@
  				nav_bar.style.backgroundColor="rgb(0,0,0,0)";
  				nav_list.style.backgroundColor="rgb(0,0,0,0)";
  				nav_button.style.backgroundColor="rgb(0,0,0,0)";
+ 				options.style.backgroundColor="rgb(0,0,0,0)";
+
  			}
  			else
  			{
@@ -369,6 +372,8 @@
  				nav_bar.style.backgroundColor="#007eff";
  				nav_list.style.backgroundColor="#007eff";
  				nav_button.style.backgroundColor="#007eff";
+ 				options.style.backgroundColor="#007eff";
+
 
  			}
  		},option);
