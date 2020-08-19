@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title> Page Title </title>
 </head>
+
 <body>
-       <nav class="navbar navbar-expand-md border sticky-top navbar-light">
+        <nav class="navbar navbar-expand-md border sticky-top navbar-light">
 		    <!-- nav brand -->
 		   	<button class="navbar-button show" type="button" >
 		          <span class="navbar-toggler-icon"></span>
@@ -23,88 +24,203 @@
 		   	<p>Find Your Maps</p>
 		    </a>
 		    <input type="text" name="search" class="searchbar--hide" placeholder="Search " />
-		          <ul class="navbar-nav">
+		        <ul class="navbar-nav">
 		              <li class="nav-item nav-link">Home</li>
 		              <li class="nav-item nav-link">Contact</li>
 		              <li class="nav-item nav-link">About</li>
 		              <li class="nav-item nav-link dropdown">
 		              	Login <span>&#9660</span>
 		              	<ul class="options">
-		              		<li>Google</li>
-		              		<li> Gmail</li>
-		              		<li>Facebook</li>
-		              		<li>Twitter</li>
+		              		<li class="nav-item nav-link">Google</li>
+		              		<li class="nav-item nav-link"> Gmail</li>
+		              		<li class="nav-item nav-link">Facebook</li>
+		              		<li class="nav-item nav-link">Twitter</li>
 		              	</ul>
 		              </li>
-		          </ul>
-		   <!-- </div>-->
-    </nav>
-    <!-- navgation end -->
-    <div class="empty"></div>
-    <!-- side nav -->
-    <div class="container nav__side__container" >
-    	<div class="nav__side">
-				  <ul class="nav__item">
-				  	
-		             <li class="nav__list">
+		        </ul>
+	    <!-- </div>-->
+    	</nav>
+    	<!-- navgation end -->
+   		<div class="empty"></div>
+    	<!-- side nav -->
+    	<div class="container nav__side__container" >
+    		<div class="nav__side">
+				<ul class="nav__item">
+		            <li class="nav__list">
 		                <a href="#" class="side__nav-link">
-		             	<span class="icon">icon</span> 
-		             	<span class="text"> A</span>
-		              </a>
-		             </li>
-		              <li class="nav__list">
-		               <a href="#"  class="side__nav-link">
-		              	<span class="icon">icon</span> 
-		             	<span class="text">B</span></a>
-		               </a> 
-		             </li>
-		             <li class="line"></li>
-		              <li class="nav__list"> 
+		             		<span class="icon"><i class="fa fa-id-card" aria-hidden="true"></i></span> 
+		             		<span class="text"> A</span>
+		              	</a>
+		            </li>
+		            <li class="nav__list">
+		                <a href="#"  class="side__nav-link">
+			              	<span class="icon"><i class="fa fa-id-card" aria-hidden="true"></i></span> 
+			             	<span class="text">B</span></a>
+		                </a> 
+		            </li>
+		            
+		            <li class="line"></li>
+		            
+		            <li class="nav__list"> 
 		              	<a href="#"  class="side__nav-link">
-		              		<span class="icon">icon</span> 
+		              		<span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span> 
 		             		<span class="text">Hotels</span></a>
 		                </a> 
-		             </li>
-		              <li class="nav__list">
+		            </li>
+		            <li class="nav__list">
 		             	<a href="#"  class="side__nav-link">
-		              		<span class="icon">icon</span> 
+		              		<span class="icon"><i class="fa fa-train" aria-hidden="true"></i></span> 
 		             		<span class="text">Train</span></a>
 		                </a> 
-		             </li>
-		              <li class="nav__list">
+		            </li>
+		            <li class="nav__list">
 		              	<a href="#"  class="side__nav-link">
-		              		<span class="icon">icon</span> 
+		              		<span class="icon"><i class="fa fa-bus" aria-hidden="true"></i></span> 
 		             		<span class="text">Bus</span></a>
 		                </a> 
-		             </li>
-		             <li class="nav__list">
+		            </li>
+		            <li class="nav__list">
 		             	<a href="#"  class="side__nav-link">
-		              		<span class="icon">icon</span> 
+		              		<span class="icon"><i class="fa fa-taxi" aria-hidden="true"></i></span> 
 		             		<span class="text">Cabs</span></a>
 		                </a>            	
-		             </li>
+		            </li>
 		   
-		             <li class="line"></li>
+		            <li class="line"></li>
 		   
-		             <li class="nav__list">
+		            <li class="nav__list">
 		             	<a href="#"  class="side__nav-link">
-		              		<span class="icon">icon</span> 
+		              		<span class="icon"><i class="fa fa-id-card" aria-hidden="true"></i></span> 
 		             		<span class="text">C</span></a>
 		               </a> 
-		             </li>
-
-		             <li class="nav__list">
+		            </li>
+		            <li class="nav__list">
 		             	<a href="#"  class="side__nav-link">
-		              		<span class="icon">icon</span> 
+		              		<span class="icon"><i class="fa fa-id-card" aria-hidden="true"></i></span> 
 		             		<span class="text">D</span></a>
 		               </a> 
-		             </li>
-		          </ul>
-		</div>
-	</div>
+		            </li>
+		        </ul>
+			</div>
+	    </div>
 		<!-- side nav end -->
-    <!--Break-->
-<div class="full__container">
+    	<!--Break-->
+		<div class="full__container">
+    		<div class="container-fluid ">
+        		<h1 class="pad">My First Bootstrap Page</h1>
+    		</div>
+    		<!--Front Page-->
+    		<div class="row">  
+        			<div class="container col">
+          				<div id="demo" class="carousel slide" data-ride="carousel">
+				          <!-- Indicators -->
+				          <ul class="carousel-indicators">
+				            <li data-target="#demo" data-slide-to="0" class="active"></li>
+				            <li data-target="#demo" data-slide-to="1"></li>
+				            <li data-target="#demo" data-slide-to="2"></li>
+				          </ul>
+				          <!-- The slideshow -->
+				          <div class="carousel-inner">
+				            <div class="carousel-item active">
+				              <img src="https://images.pexels.com/photos/57901/pexels-photo-57901.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"  alt="Los Angeles" width="1100" height="500">
+				            </div>
+				            <div class="carousel-item">
+				              <img src="https://images.pexels.com/photos/1780838/pexels-photo-1780838.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Chicago" width="1100" height="500">
+				            </div>
+				            <div class="carousel-item">
+				              <img src="https://images.pexels.com/photos/1914984/pexels-photo-1914984.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="New York" width="1100" height="500">
+				            </div>
+				        </div>  
+				        <!-- Left and right controls -->
+				        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+				           <span class="carousel-control-prev-icon"></span>
+				        </a>
+				        <a class="carousel-control-next" href="#demo" data-slide="next">
+				            <span class="carousel-control-next-icon"></span>
+				        </a>				    
+				    </div>
+        	</div>
+	        <div class="container col">
+	          <h1>My First Bootstrap Page</h1>
+	          <p>This part is inside a .container class.</p> 
+	          <p>The .container class provides a responsive fixed width container.</p>
+	          <p>To all our readers, It might be awkward, but please don't scroll past this. This Friday we humbly ask you to defend Wikipedia's independence. 98% of our readers don't give; they simply look the other way. If you are an exceptional reader who has already donated, we sincerely thank you. If you donate just ₹ 150, Wikipedia could keep thriving for years. Most people donate because Wikipedia is useful. If Wikipedia has given you ₹ 150 worth of knowledge this year, take a minute to donate. Show the volunteers who bring you reliable, neutral information that their work matters. Thank you. </p>
+	        </div>
+	        </div>
+	      	<!--Slider-1 img-->
+			<div class="container-fluid slider1-container mt-5">
+				<span class="button button__prev1"></span>
+				<div class="container-fluid" >
+					<h2 class="Slider__title">Editor's Picks of the Week </h2>
+		  			<div class="slider1 p-2">
+						<div class="card card1" >
+							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
+							  <h5 class="card-title">Card title 1</h5>
+							<div class="card-body">
+							    
+							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
+
+
+						<div class="card card1" >
+							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
+							  <h5 class="card-title">Card title 2</h5>
+							<div class="card-body">
+							 
+							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							    
+							</div>
+						</div>
+						<div class="card card1" >
+							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
+							  <h5 class="card-title">Card title 3</h5>
+							<div class="card-body">
+							   
+							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							    
+							</div>
+						</div>
+						
+						<div class="card card1" >
+							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
+							   <h5 class="card-title">Card title 4</h5>
+							<div class="card-body">
+							   
+							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							    
+							</div>
+						</div>
+						
+						<div class="card card1" >
+							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
+							  <h5 class="card-title">Card title 5</h5>
+							<div class="card-body">
+							    
+							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							    
+							</div>
+						</div>
+						
+						<div class="card card1" >
+							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
+							  <h5 class="card-title">Card title 6</h5>
+							<div class="card-body">
+							    
+							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
+			       	</div>
+			       
+				</div>
+					<span class="button button__next1"></span>
+			</div>
+			<!--Slider-1 end-->
+
+			<!--Slider-2-->
+			<div class="container-fluid slider2-container">
+				<span class="button button__prev2"></span>
+				<div class="container-fluid" >
 
     <div class="container-fluid">
             
@@ -485,89 +601,74 @@
                                         <h4 class="card-title">Special title treatment</h4>
                                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
 
-                                    </div>
-                                </div>
-                            </div>
 
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
+					<h2 class="Slider__title">Editor's Picks of the Week </h2>
+					
 
-                            <div class="col-md-4 mb-3">
-                                <div class="card">
-                                    <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Special title treatment</h4>
-                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+		  			<div class="slider2 p-2">
 
-                                    </div>
+						<div class="card card2" >
+							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
+							  <h5 class="card-title">Card title 1</h5>
+							<div class="card-body">
+							    
+							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
 
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <div class="card">
-                                    <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Special title treatment</h4>
-                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <div class="card">
-                                    <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=0754ab085804ae8a3b562548e6b4aa2e">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Special title treatment</h4>
-                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-
-                            <div class="col-md-4 mb-3">
-                                <div class="card">
-                                    <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Special title treatment</h4>
-                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <div class="card">
-                                    <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Special title treatment</h4>
-                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <div class="card">
-                                    <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Special title treatment</h4>
-                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</section>
+						<div class="card card2" >
+							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
+							  <h5 class="card-title">Card title 2</h5>
+							<div class="card-body">
+							 
+							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							    
+							</div>
+						</div>
+						<div class="card card2" >
+							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
+							  <h5 class="card-title">Card title 3</h5>
+							<div class="card-body">
+							   
+							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							    
+							</div>
+						</div>
+						
+						<div class="card card2" >
+							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
+							   <h5 class="card-title">Card title 4</h5>
+							<div class="card-body">
+							   
+							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							    
+							</div>
+						</div>
+						
+						<div class="card card2" >
+							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
+							  <h5 class="card-title">Card title 5</h5>
+							<div class="card-body">
+							    
+							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							    
+							</div>
+						</div>
+						
+						<div class="card card2" >
+							  <img class="card-img-top" src="https://static2.tripoto.com/media/filter/tst/img/245847/TripDocument/1594711959_10409774_747729288606002_3490240831060144822_n.jpg" alt="Card image cap">
+							  <h5 class="card-title">Card title 6</h5>
+							<div class="card-body">
+							    
+							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
+			       	</div>
+			       
+				</div>
+					<span class="button button__next2"></span>
+			</div>
+	<!--Slider-2 end-->
       <!-- Site footer --> 
       <footer class="site-footer">
         <div class="container">
@@ -630,18 +731,20 @@
  	let nav_bar=document.querySelector(".navbar");
  	let nav_list=document.querySelector(".navbar-nav");
  	let nav_button=document.querySelector(".navbar-button");
+ 	let options=document.querySelector(".options");
  	let header=document.querySelector(".empty");
  	let option={root:null,thershold:0,rootmargin:""}
  	let observer=new IntersectionObserver(function(entries,observer)
  		{
  			//if intersecting hide the search bar in nav
- 			console.log(entries)
  			if(entries[0].isIntersecting)
  			{
  				search_bar.className="searchbar--hide";
  				nav_bar.style.backgroundColor="rgb(0,0,0,0)";
  				nav_list.style.backgroundColor="rgb(0,0,0,0)";
  				nav_button.style.backgroundColor="rgb(0,0,0,0)";
+ 				options.style.backgroundColor="rgb(0,0,0,0)";
+
  			}
  			else
  			{
@@ -650,6 +753,8 @@
  				nav_bar.style.backgroundColor="#007eff";
  				nav_list.style.backgroundColor="#007eff";
  				nav_button.style.backgroundColor="#007eff";
+ 				options.style.backgroundColor="#007eff";
+
 
  			}
  		},option);
@@ -659,22 +764,17 @@
 function sideNavItemToggle()
 {
 
- 	var nav_list=document.querySelectorAll(".nav__list");
- 	var nav_link=document.querySelectorAll(".side__nav-link");
- 	console.log(nav_link)
-
- 	var nav__side__container=document.querySelector(".nav__side__container");
- 	
+ 	let nav_link=document.querySelectorAll(".side__nav-link"); 	
+ 	let nav__side__container=document.querySelector(".nav__side__container");
  	let nav_button=document.querySelector(".navbar-button");
  	nav_button.addEventListener("click",()=>showText(1));
 
- 	var texts=document.querySelectorAll(".text");
+ 	let texts=document.querySelectorAll(".text");
  	
- 	for(let i=0;i<nav_list.length;i++)
+ 	for(let i=0;i<nav_link.length;i++)
  	{
- 		//nav_list[i].addEventListener("mouseover",showText);
- 		nav_link[i].addEventListener("mouseover",showText);
- 		//nav_list[i].addEventListener("mouseout",hideText);
+ 		
+ 		nav_link[i].addEventListener("mouseover",showText); 		
  		nav_link[i].addEventListener("mouseout",hideText);
 
  	}
@@ -687,7 +787,7 @@ function sideNavItemToggle()
  				return;	
  		}
  		nav__side__container.style.width="150px";
- 		for(let i=0;i<nav_list.length;i++)
+ 		for(let i=0;i<nav_link.length;i++)
  		{
  			texts[i].style.display="inline";
  		}
@@ -697,7 +797,7 @@ function sideNavItemToggle()
  	function hideText()
  	{
  		nav__side__container.style.width="80px";
- 		for(let i=0;i<nav_list.length;i++)
+ 		for(let i=0;i<nav_link.length;i++)
  		{
  			texts[i].style.display="none";
  		}
@@ -705,10 +805,126 @@ function sideNavItemToggle()
  	}
 
  }
+function setCards(cards_name,slider_name,button_prev_name,button_next_name)
+  	{
+
+  	   //getting the cards dom node and slider node
+  	  var cards=document.querySelectorAll(cards_name);
+      var slider=document.querySelector(slider_name)
+      //slider.style.transform="translateX("0px")";
+      //setting the nextslide num , prev slide num and numslide to move
+      var next_card=3;
+      var prev_card=0;
+      var num_cards=3;
+      //total no of card
+      var totalcards=cards.length;
+      //getting the next and prev button dom node 
+      var next_button=document.querySelector(button_next_name);
+      var prev_button=document.querySelector(button_prev_name);
+      //adding the event listener
+      next_button.addEventListener("click" ,nextcard)
+      prev_button.addEventListener("click" ,prevcard)
+      //getting the width first card 
+      var pic_width=cards[0].getBoundingClientRect().width;
+     
+   
+  	function setValue()
+  	{
+  	  //getting the window windth to know the num of slide to move
+  	  var window_width=window.innerWidth;
+  	  //if it is laptop or computer 
+  	  if (window_width>993) {
+  	  	 next_card=3;
+       	 prev_card=0;
+       	 num_cards=3;
+  	  }
+  	  //if it is the mobile 
+  	  else if(window_width<=500)
+  	  {
+  	  	 next_card=1;
+       	 prev_card=0;
+       	 num_cards=1;
+  	  }
+  	  //if it is the tablet 
+  	  else
+  	  {
+  	  	 next_card=2;
+       	 prev_card=0;
+       	 num_cards=2;
+  	  }
+      
+       pic_width=cards[0].getBoundingClientRect().width;
+       setSlide()
+      
+  	}
+      
+     
+      setValue()
+      //adding event listener when resize the card img
+     window.addEventListener("resize",setValue)
+
+      //setslide for intial rendering
+      function setSlide()
+      {
+        for(let i=0;i<totalcards;i++)
+        {
+           //setting the each card with 30 px space 
+          cards[i].style.left=""+(pic_width+30)*i+"px"; 
+        }
+      }
+      //function to move the next card
+      function nextcard()
+      {
+      	//checking if the nextslide num that less than total card
+        if(next_card<totalcards)
+        {
+          //getting the amount of the distance to move the slider
+          let dis=cards[next_card].style.left;
+          //moving the slider
+          slider.style.transform="translateX(-"+dis+")";
+          //setting the prev_card to next_card
+          prev_card=next_card;
+          if(next_card+num_cards>=totalcards)
+          {
+           next_button.style.display="none";
+          }
+          //if not increase the next card by num of card
+          else
+          {
+            next_card+=num_cards;
+          }
+          //when user press the next button setting the prev button to visible 
+          prev_button.style.display="inline";  
+        }
+      }
+       //function to move the prev card
+      function prevcard()
+      {
+        
+        if(prev_card>0)
+        {
+              next_card=prev_card;
+              prev_card-=num_cards;
+              //getting the amount of the distance to move the slider
+              let dis=cards[prev_card].style.left;
+              slider.style.transform="translateX(-"+dis+")";
+              if(prev_card==0)
+              {
+              	//if no prev card is hide the prev button
+              	 prev_button.style.display="none";
+              }
+            next_button.style.display="inline";
+        }
+      }
+
+
+    }
 function main()
 {
 	navItemToggle()
 	sideNavItemToggle();
+	setCards(".card1",".slider1",".button__prev1",".button__next1");
+	setCards(".card2",".slider2",".button__prev2",".button__next2");
 
 }
 main();
