@@ -196,7 +196,7 @@ nav
 ================================================== */
 .container-fluid
 {
-    width: 80%;
+    width: 90%;
     margin:0 auto;
     padding: 0 0;
     overflow: hidden;
@@ -263,7 +263,7 @@ nav
 .card
 {
   position: absolute;
-  width: 23%;
+  width: 31%;
   border-radius: 10px;
 }
 .card-img-top
